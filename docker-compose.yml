@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - sqlitedata:/var/lib/sqlite/data
+
+volumes:
+  sqlitedata:
